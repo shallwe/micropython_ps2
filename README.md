@@ -8,20 +8,20 @@ ps2 controller in micropython
 
 我在我买的esp32上，配置端口di口13， do口12, cs口15, clk口14， 利用这个代码
 
-·
+```
 from ps2 import ps2ctl
 ps2ct.run() 
-·
+```
 
 可以运行，会打印出按键。注意在运行之前，手柄插上电池，运行前要按一下start键
 
 
 如果你要定制端口
 
-·
+```
 from ps2 import PS2Controller
 ps2ctl = PS2Controller(di_pin_no=13, do_pin_no=12, cs_pin_no=15, clk_pin_no=14)
 ps2ctl.run()
-·
+```
 
 希望这段代码对你有用
